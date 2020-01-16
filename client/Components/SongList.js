@@ -11,7 +11,6 @@ export class SongList extends Component {
     ));
   }
   render() {
-    console.log(this.props);
     if (this.props.data.loading) return <h1>Loading...</h1>;
 
     return <ul className="collection">{this.renderSongs()}</ul>;
