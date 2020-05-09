@@ -8,11 +8,15 @@ export class SongCreate extends Component {
     };
   }
 
+  onSubmit (event) {
+    event.preventDefault();
+
+  }
   render() {
     return (
       <div>
         <h3>Create a new song</h3>
-        <form action="">
+        <form action="" onSubmit={this.onSubmit.bind(this)}>
           <label htmlFor="">Song Title</label>
           <input
             type="text"
