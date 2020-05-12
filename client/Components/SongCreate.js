@@ -8,10 +8,6 @@ export class SongCreate extends Component {
     };
   }
 
-  onSubmit (event) {
-    event.preventDefault();
-
-  }
   render() {
     return (
       <div>
